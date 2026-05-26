@@ -4,29 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>compasso Musical - loja de Instrumentos Musicais</title>
+    <!--CSS interno-->
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+        body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+        color: #333333;
+        line-height: 1.6;
+    }
+
+        h1, h2, h3 {
+          color: #1a1a1a;  
+          margin-bottom: 1rem;
+        }
+
+            p {
+            margin-bottom: 1rem;
+        }
+
+            a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+            ul {
+            list-style: none;
+        }
+
+        .cabecalhoPrincipal {
+            background-color: #ffffff;
+            padding: 1,5rem 5%;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .titulo {
+      font-size: 1.8rem; 
+      font-weight: bold; 
+      color: #d32f2f;
+      line-height: 1.6;
+      }
+
+        .ListaNavegacao{
+            display: flex;
+            gap: 2rem;
+        }
+
+        .LinkNav{
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .LinkNav:hover{
+            color: #d32f2f;
+        }
+        .botaoPrincipal {
+            display: inline-block;
+            background-color: #d32f2f;
+            color: #ffffff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: backgroud-color 0.3s ease;
+        }
+
+        .botaoPrincipal:hover {
+        background-color: #b71b1b;
+        color: #ffffff;
+        }
+
+        .conteiner {
+            padding: 4rem 5%;
+        }
+        
+        .tituloSecao {
+            text-align: center;
+            font-size: 2,5rem;
+            margin-bottom: 2rem;
+        }
+
+    </style>
 </head>
 <body>
 <!--Cabeçalho-->
-<header>
+<header id="header" class="cabecalhoPrincipal"> 
     <div id="logo">
-        <h1>Compasso Musical</h1>
+        <h1 class="titulo">Compasso Musical</h1>
     </div>
     <nav>
-        <ul>
+        <ul class="ListaNavegacao">
             <li>
-                <a href="#hero">Inicio</a>
+                <a href="#hero" class="linknav">Inicio</a>
             </li>
             <li>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre" class="linknav">Sobre</a>
             </li>
             <li>
-                <a href="#Instrumentos">Instrumentos</a>
+                <a href="#instrumentos" class="linknav">Instrumentos</a>
             </li>
             <li>
-                <a href="#depoimentos">Depoimento</a>
+                <a href="#depoimentos" class="linknav">Depoimento</a>
             </li>
             <li>
-                <a href="">Contato</a>
+                <a href="#contato" class="linknav">Contato</a>
             </li>
         </ul>
     </nav>
@@ -34,29 +123,32 @@
 
 <!--Conteúdo Principal-->
 <main>
-        <section id="hero">
-            <h2>o som da sua vida começa aqui</h2>
-            <p>
+        <section id="hero" class="SecaoHero" style="background-color: #eceff1; text-align: center; padding: 5rem 2rem; border-bottom: 4px solid #d32f2f;">
+            <h2 style="font-size: 3rem; color: #1a1a1a;">o som da sua vida começa aqui</h2>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto;">
                 encontre as melhores marcas de violinos,trompetes ou violões
             </p>
             <img src="https://images.unsplash.com/photo-1604514288114-3851479df2f2?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="banda de rock  em um show usando os instrumentos musical da compasso musical" width="300">
+                alt="banda de rock  em um show usando os instrumentos musical da compasso musical" width="300" style="border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);"
+                />
             <br><br>
-            <a href="">ver as nossas ofertas</a>
+            <a href="#" class="botaoPrincipal">ver as nossas ofertas</a>
         </section>
 
         <!--seção sobre-->
-        <section id="sobre">
-            <h2>sobre a compasso musical</h2>
-            <p>
-                nossa loja nasceu da paixão pela musica. nossa missão é netregar qualidade sonora tanto para quem esta
-                prendendo os primeiros acordes quantos para msucios profissionais.
-            </p>
-            <ul>
-                <li>todos os instrumentos por nossa equipe tecnica.</li>
-                <li>garantia estringida de fabrica.</li>
-                <li>suporte de atendimento feito por musicos reais</li>
-            </ul>
+        <section id="sobre" class="conteiner">
+            <h2 class="tituloSecao">sobre a compasso musical</h2>
+            <div style="max-width: ;: 800px; margin: 0 auto; text-align:center"> 
+                <p>
+                    nossa loja nasceu da paixão pela musica. nossa missão é netregar qualidade sonora tanto para quem esta
+                    prendendo os primeiros acordes quantos para msucios profissionais.
+                </p>
+                <ul style="text-align: left; display: inline-block; margin-top: 1rem;">
+                    <li style="margin: 0.5rem;">✅todos os instrumentos por nossa equipe tecnica.</li>
+                    <li style="margin: 0.5rem;">✅garantia estringida de fabrica.</li>
+                    <li style="margin: 0.5rem;">✅suporte de atendimento feito por musicos reais</li>
+                </ul>
+            </div>
         </section>
 
         <!--instrumentos-->
@@ -65,7 +157,8 @@
             <article>
                 <h3>guitarra eletrica stratocaster</h3>
                 <img src="https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02"
-                    alt="imagem guitarra eletrica estratocaster" width="300">
+                    alt="imagem guitarra eletrica estratocaster" width="600"
+                    style="border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);"/>
                 <p>
                     <strong>marca: </strong>Fender
                 </p>
@@ -96,7 +189,7 @@
             </section>
             
             <!--Seção depoimentos-->
-            <section id="Depoimentos">
+            <section id="depoimentos">
                 <h2>O que os nossos clientes dizem</h2>
                 <blockquote>
                     <p>
